@@ -6,6 +6,7 @@ WORKDIR /app/naming_service/
 COPY .  /app/naming_service/
 
 RUN mix deps.get
-RUN mix compile
+RUN mix local.rebar --force
+RUN mix compile --force
 EXPOSE 4000
 CMD mix phx.server
