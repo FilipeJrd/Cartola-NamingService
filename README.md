@@ -9,7 +9,17 @@ To start your Phoenix server:
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+## Endpoints
 
+### /register
+params:
+  * host -> address to be registered
+  * name -> name which host will be registered with
+  
+### /lookup
+params:
+  * name -> name which host is beign lookedup
+  
 ## Learn more
 
   * Official website: http://www.phoenixframework.org/
